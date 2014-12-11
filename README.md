@@ -19,8 +19,8 @@ How to setup project
 ### Clone
 Clone project by command line and go to working directory
 
-	$ git clone git@github.com:nikoloza/MayBelline.git maybelline
-	$ cd maybelline
+	$ git clone git@github.com:nikoloza/Instagram.git maybelline
+	$ cd Instagram
 
 
 -------------
