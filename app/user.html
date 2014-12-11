@@ -9,6 +9,15 @@
     <h4>{{user.full_name}}</h4>
     <h2>{{user.username}}</h2>
 
-    <p>{{user.bio}}</p>
+    <p class="bg-whitegray">{{user.bio}}</p>
 
+    <br><br>
+
+    <section class="row10 small-tablet5 mobile2 small-mobile1 no-side-padding">
+
+        <figure class="cell" ng-repeat="pic in pics">
+            <img ng-src="{{pic.images.low_resolution.url}}">
+        </figure>
+
+    </section>
 </section>

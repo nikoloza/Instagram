@@ -10,4 +10,9 @@ app.controller('userCtrl', function($scope, $http, $stateParams) {
 
             if(data.meta.code === 400) $scope.hidden = true;
         });
+
+    $http.jsonp('https://api.instagram.com/v1/users/' + id + '/media/recent?client_id=74a1447737884721bc993537dab854de&callback=JSON_CALLBACK')
+        .success(function(data) {
+            $scope.pics = data.data;
+        });
 });
