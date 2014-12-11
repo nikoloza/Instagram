@@ -1,0 +1,13 @@
+{
+    "node": true,
+    "browser": true,
+    "bitwise": true,
+    "strict": false,
+    "globals": {
+        "angular": true,
+        "app": true,
+        "modulePol": true,
+        "modulePoi": true,
+        "modulePob": true
+    }
+}
