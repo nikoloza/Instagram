@@ -1,0 +1,14 @@
+<section ng-controller="userCtrl">
+
+    <figure class="cell">
+        <img ng-src="{{user.profile_picture}}" alt="{{user.username}}">
+    </figure>
+
+    <p ng-show="hidden">This user has private content.</p>
+
+    <h4>{{user.full_name}}</h4>
+    <h2>{{user.username}}</h2>
+
+    <p>{{user.bio}}</p>
+
+</section>

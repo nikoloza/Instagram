@@ -5799,6 +5799,12 @@ html {
 body {
   background: #ffffff;
 }
+h2 {
+  margin-top: 0;
+}
+h4 {
+  margin-bottom: 0;
+}
 @media all and (max-width: 1920px) {
   .show-big-screen {
     display: none;

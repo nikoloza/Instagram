@@ -30,6 +30,7 @@ module.exports = function(grunt) {
 			serverFile: 'server.js',
 			libraries: [
 				'lib/angular/angular.min.js',
+				'lib/ui-router/release/angular-ui-router.min.js',
 				'lib/modernizr/modernizr.js',
 				'lib/fastclick/lib/fastclick.js'
 			]
@@ -41,7 +42,7 @@ module.exports = function(grunt) {
 			options: {
 				reporter: require('jshint-stylish')
 			},
-			target: ['app/*']
+			target: ['app/*.js']
 		},
 
 		// concat all js files
@@ -53,7 +54,7 @@ module.exports = function(grunt) {
 					sourceMapName: 'scratch/app.map'
 				},
 				files: {
-					'scratch/app.js': 'app/*'
+					'scratch/app.js': 'app/*.js'
 				}
 			}
 		},

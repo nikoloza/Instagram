@@ -1,0 +1,9 @@
+<section class="row10 small-tablet5 mobile2 small-mobile1 no-side-padding">
+
+    <figure class="cell" ng-repeat="user in users">
+        <a ui-sref="user({id: user.id, term: term})">
+            <img ng-src="{{user.profile_picture}}" alt="{{user.username}}">
+        </a>
+    </figure>
+
+</section>
